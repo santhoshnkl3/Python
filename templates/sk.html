@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="static\css\bootstrap.min.css">
+<script src="static\js\bootstrap.min.js"></script>
+</head>
+<body>
+	
+
+	<form  class="form-group"  name='registerForm' action="/register" method="post">
+		<table>
+			<tr>
+				<td>Name</td>
+				<td>
+	<input class="form-control" type='text' name='name' value='' required />
+	</td>
+			</tr>
+			<tr>
+				<td>Username</td>
+				<td>
+	<input type='text' class="form-control" name='username' value='' required />
+	</td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td>
+	<input type='password' class="form-control" name='password' value='' required />
+	</td>
+			</tr>
+			<tr>
+				<td>Re-type Password</td>
+				<td>
+	<input type='password' class="form-control" name='confpassword' value='' required />
+	</td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>
+	<input type='radio' name='gender' value='Male' required />
+	Male 
+	<input type='radio' name='gender' value='Female' required />
+	Female 
+	<input type='radio' name='gender' value='Other' required />
+	Other</td>
+			</tr>
+			<tr>
+				<td>Programming Skills</td>
+				<td><input type='checkbox' name='skills' value='Java' /> Java
+					<input type='checkbox' name='skills' value='Android' /> Android <input
+					type='checkbox' name='skills' value='Ruby' /> Ruby <input
+					type='checkbox' name='skills' value='.Net' /> .Net</td>
+			</tr>
+			<tr>
+				<td>Contact No</td>
+				<td>
+	<input type='text' name='contact' value='' required />
+	</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>
+	<input type='email' name='email' value='' required />
+	</td>
+			</tr>
+			<tr>
+				<td>College</td>
+				<td><select name='college' required>
+						<option value=''>Select College</option>
+						<option value='KCE'>Karpagam College of Engineering</option>
+						<option value='KU'>Karpagam University</option>
+						<option value='KIT'>Karpagam Institute of Technology</option>
+				</select></td>
+			</tr>
+			<tr>
+
+				<td colspan="2" align=center>
+	<input type='submit' name='submit' value='submit' required />
+	</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
